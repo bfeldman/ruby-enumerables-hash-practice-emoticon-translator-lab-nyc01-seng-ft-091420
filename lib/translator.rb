@@ -28,6 +28,10 @@ def get_japanese_emoticon(file_path, emoticon)
 end
 
 def get_english_meaning(file_path, emoticon)
+<<<<<<< HEAD
+=======
+  # code goes here
+>>>>>>> e1efbc24a09c2477afdf52744dc2588052c59578
   dict = load_library(file_path)
   english_result = nil
   dict.find do |key, value|
@@ -37,7 +41,11 @@ def get_english_meaning(file_path, emoticon)
   end
   
   if !english_result
+<<<<<<< HEAD
     "Sorry, that emoticon was not found"
+=======
+    "sorry! nothing found!"
+>>>>>>> e1efbc24a09c2477afdf52744dc2588052c59578
   else
     english_result
   end
